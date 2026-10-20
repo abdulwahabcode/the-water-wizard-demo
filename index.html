@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Water Wizard — Plumber in Teesside | 24/7 Emergency Callouts</title>
+<meta name="description" content="The Water Wizard — local plumber covering all of Teesside. Leaks, blocked drains, radiators, bathrooms and 24/7 emergency callouts. Over 19 years' experience, fully insured, free no-obligation quotes. Call or WhatsApp 07542 796276.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Archivo:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    /* Palette — deep plum & brass on warm cream (60-30-10) */
+    --plum-black:#160E1E;   /* tinted black — hero / footer */
+    --plum-deep:#221331;    /* 30% dark sections */
+    --plum:#2E1D42;         /* cards on dark */
+    --plum-line:#453061;    /* hairlines on dark */
+    --cream:#F6F1E7;        /* 60% light sections */
+    --cream-alt:#EDE4D2;    /* alt light band */
+    --card:#FDFBF5;         /* cards on cream */
+    --ink:#2B2135;          /* text on light */
+    --ink-soft:#5D5269;     /* secondary text on light */
+    --offwhite:#EFEAF3;     /* text on dark — never pure white */
+    --muted-dark:#B3A6C9;   /* secondary text on dark */
+    --brass:#C2A46D;        /* 10% accent — CTAs & highlights only */
+    --brass-hover:#AC8F55;
+    --brass-soft:#D8BE8C;   /* brass on dark */
+    --wa:#3E7C4F;           /* muted WhatsApp green — functional only */
+    --wa-hover:#356B44;
+    --radius:6px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  html,body{overflow-x:hidden}
+  body{
+    font-family:'Archivo',system-ui,sans-serif;
+    background:var(--cream);
+    color:var(--ink);
+    line-height:1.6;
+    font-size:16.5px;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;display:block}
+  a{text-decoration:none;color:inherit}
+  .wrap{width:min(1180px,100% - 2.5rem);margin-inline:auto}
+  .serif{font-family:'DM Serif Display',Georgia,serif;font-weight:400}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:.6rem;
+    font-size:.78rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;
+  }
+  .eyebrow::before{content:"";width:2.2rem;height:1px;background:var(--brass)}
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:.55rem;
+    font-weight:700;font-size:.95rem;letter-spacing:.04em;
+    padding:.95rem 1.7rem;border-radius:var(--radius);
+    transition:background .25s ease,transform .25s ease,box-shadow .25s ease;
+    cursor:pointer;border:1px solid transparent;white-space:nowrap;
+  }
+  .btn svg{width:19px;height:19px;flex:none}
+  .btn-brass{background:var(--brass);color:#241A08}
+  .btn-brass:hover{background:var(--brass-hover);transform:translateY(-2px)}
+  .btn-wa{background:var(--wa);color:#F2F5EC}
+  .btn-wa:hover{background:var(--wa-hover);transform:translateY(-2px)}
+  .btn-ghost{background:transparent;color:var(--offwhite);border-color:var(--plum-line)}
+  .btn-ghost:hover{border-color:var(--brass);color:var(--brass-soft)}
+  .btn-plum{background:var(--plum-deep);color:var(--offwhite)}
+  .btn-plum:hover{background:var(--plum);transform:translateY(-2px)}
+  section{padding:5.2rem 0}
+  .sec-head{max-width:44rem;margin-bottom:3rem}
+  .sec-head h2{font-size:clamp(2rem,4.5vw,3rem);line-height:1.12;margin:.7rem 0 .8rem}
+  .sec-head h2 em{font-style:italic;color:var(--brass-hover)}
+  .on-dark h2 em{color:var(--brass-soft)}
+  .sec-head p{color:var(--ink-soft);font-size:1.05rem}
+  .on-dark p{color:var(--muted-dark)}
+  .on-dark .eyebrow{color:var(--brass-soft)}
+  .reveal{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s ease}
+  .reveal.visible{opacity:1;transform:none}
+
+  /* ---------- Header ---------- */
+  header{
+    position:sticky;top:0;z-index:60;
+    background:rgba(22,14,30,.96);backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--plum-line);
+  }
+  .header-in{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.85rem 0}
+  .logo{display:flex;align-items:center;gap:.75rem;color:var(--offwhite)}
+  .logo-mark{
+    width:42px;height:42px;flex:none;border:1.5px solid var(--brass);border-radius:50%;
+    display:grid;place-items:center;color:var(--brass-soft);
+  }
+  .logo-mark svg{width:20px;height:20px}
+  .logo-text{line-height:1.15}
+  .logo-text .serif{font-size:1.28rem;letter-spacing:.01em;display:block}
+  .logo-text small{font-size:.66rem;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--brass-soft)}
+  nav.main-nav{display:flex;gap:2rem}
+  nav.main-nav a{color:var(--muted-dark);font-size:.92rem;font-weight:600;letter-spacing:.03em;transition:color .2s}
+  nav.main-nav a:hover{color:var(--offwhite)}
+  .header-call{
+    display:inline-flex;align-items:center;gap:.5rem;
+    border:1px solid var(--brass);color:var(--brass-soft);
+    font-weight:700;font-size:.92rem;padding:.55rem 1.1rem;border-radius:var(--radius);
+    transition:background .2s,color .2s;
+  }
+  .header-call:hover{background:var(--brass);color:#241A08}
+  .header-call svg{width:16px;height:16px}
+
+  /* ---------- Hero ---------- */
+  .hero{
+    background:
+      radial-gradient(52rem 30rem at 88% -10%,rgba(74,52,112,.55),transparent 60%),
+      radial-gradient(40rem 26rem at -10% 110%,rgba(194,164,109,.12),transparent 55%),
+      var(--plum-black);
+    color:var(--offwhite);
+    padding:4.8rem 0 0;
+    position:relative;
+  }
+  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:3.5rem;align-items:center}
+  .hero .eyebrow{color:var(--brass-soft)}
+  .hero h1{
+    font-family:'DM Serif Display',Georgia,serif;font-weight:400;
+    font-size:clamp(2.6rem,5.6vw,4.3rem);line-height:1.06;letter-spacing:.005em;
+    margin:1.1rem 0 1.2rem;
+  }
+  .hero h1 em{font-style:italic;color:var(--brass-soft)}
+  .hero-sub{color:var(--muted-dark);font-size:1.12rem;max-width:32rem}
+  .hero-ctas{display:flex;flex-wrap:wrap;gap:.9rem;margin:2rem 0 1.6rem}
+  .chip-row{display:flex;flex-wrap:wrap;gap:.55rem}
+  .chip{
+    display:inline-flex;align-items:center;gap:.45rem;
+    border:1px solid var(--plum-line);border-radius:999px;
+    padding:.42rem .95rem;font-size:.85rem;font-weight:600;color:var(--offwhite);
+  }
+  .chip svg{width:15px;height:15px;color:var(--brass-soft)}
+  .chip.hot{border-color:var(--brass);color:var(--brass-soft)}
+  .hero-photo{position:relative}
+  .hero-photo .frame{
+    position:relative;border-radius:var(--radius);overflow:hidden;
+    box-shadow:0 30px 60px rgba(0,0,0,.45);
+  }
+  .hero-photo .frame::after{
+    content:"";position:absolute;inset:0;border:1px solid rgba(216,190,140,.35);border-radius:var(--radius);pointer-events:none;
+  }
+  .hero-photo img{width:100%;height:520px;object-fit:cover}
+  .hero-photo::before{
+    content:"";position:absolute;inset:0;transform:translate(16px,16px);
+    border:1.5px solid var(--brass);border-radius:var(--radius);opacity:.55;z-index:-0;
+  }
+  .hero-badge{
+    position:absolute;left:-14px;bottom:26px;
+    background:var(--cream);color:var(--ink);
+    border-radius:var(--radius);padding:.8rem 1.1rem;
+    box-shadow:0 18px 36px rgba(10,5,16,.4);
+    display:flex;align-items:center;gap:.8rem;max-width:17rem;
+  }
+  .hero-badge .serif{font-size:1.7rem;color:var(--plum-deep);line-height:1}
+  .hero-badge p{font-size:.82rem;line-height:1.4;color:var(--ink-soft)}
+  .hero-badge p strong{color:var(--ink)}
+  /* stats strip */
+  .stats{
+    margin-top:4.2rem;border-top:1px solid var(--plum-line);
+    display:grid;grid-template-columns:repeat(4,1fr);
+  }
+  .stat{padding:1.6rem 1.4rem 1.9rem;border-left:1px solid var(--plum-line)}
+  .stat:first-child{border-left:none;padding-left:0}
+  .stat .serif{font-size:2.1rem;color:var(--brass-soft);line-height:1.1;display:block}
+  .stat span{font-size:.88rem;color:var(--muted-dark);font-weight:600;letter-spacing:.02em}
+
+  /* ---------- Services ---------- */
+  .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+  .svc{
+    background:var(--card);border:1px solid #E3D9C4;border-radius:var(--radius);
+    padding:2rem 1.7rem;position:relative;
+    transition:transform .3s ease,box-shadow .3s ease;
+  }
+  .svc:hover{transform:translateY(-5px);box-shadow:0 22px 40px rgba(43,33,53,.12)}
+  .svc .num{
+    font-family:'DM Serif Display',Georgia,serif;font-style:italic;
+    font-size:1rem;color:var(--brass-hover);letter-spacing:.05em;
+  }
+  .svc-icon{
+    width:50px;height:50px;border-radius:50%;margin:.9rem 0 1.1rem;
+    background:var(--plum-deep);color:var(--brass-soft);
+    display:grid;place-items:center;
+  }
+  .svc-icon svg{width:24px;height:24px}
+  .svc h3{font-family:'DM Serif Display',Georgia,serif;font-weight:400;font-size:1.42rem;line-height:1.2;margin-bottom:.55rem;color:var(--plum-deep)}
+  .svc p{color:var(--ink-soft);font-size:.98rem}
+  .svc.emergency{background:var(--plum-deep);border-color:var(--plum-deep)}
+  .svc.emergency h3{color:var(--offwhite)}
+  .svc.emergency p{color:var(--muted-dark)}
+  .svc.emergency .num{color:var(--brass-soft)}
+  .svc.emergency .svc-icon{background:var(--brass);color:#241A08}
+  .svc.emergency a{color:var(--brass-soft);font-weight:700}
+
+  /* ---------- Why ---------- */
+  .why{background:var(--plum-deep);color:var(--offwhite);position:relative;overflow:hidden}
+  .why .droplet-ghost{
+    position:absolute;right:-70px;top:50%;transform:translateY(-50%);
+    width:340px;height:340px;color:rgba(216,190,140,.06);pointer-events:none;
+  }
+  .why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;position:relative}
+  .why-item{padding:.4rem 1.6rem;border-left:1px solid var(--plum-line)}
+  .why-item:first-child{border-left:none;padding-left:0}
+  .why-item .tick{
+    width:38px;height:38px;border:1.5px solid var(--brass);border-radius:50%;
+    display:grid;place-items:center;color:var(--brass-soft);margin-bottom:1.1rem;
+  }
+  .why-item .tick svg{width:18px;height:18px}
+  .why-item h3{font-family:'DM Serif Display',Georgia,serif;font-weight:400;font-size:1.35rem;margin-bottom:.5rem}
+  .why-item p{color:var(--muted-dark);font-size:.95rem}
+
+  /* ---------- Gallery ---------- */
+  .gal-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem}
+  .gal{position:relative;border-radius:var(--radius);overflow:hidden;aspect-ratio:3/3.6}
+  .gal img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+  .gal:hover img{transform:scale(1.06)}
+  .gal figcaption{
+    position:absolute;left:0;right:0;bottom:0;
+    padding:2.4rem 1.1rem .95rem;color:var(--offwhite);
+    background:linear-gradient(transparent,rgba(22,14,30,.88));
+    font-size:.92rem;font-weight:600;letter-spacing:.02em;
+  }
+  .gal figcaption small{display:block;font-weight:500;color:var(--brass-soft);font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;margin-bottom:.15rem}
+
+  /* ---------- Steps ---------- */
+  .steps-sec{background:var(--cream-alt)}
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:2.4rem}
+  .step{border-top:2px solid var(--plum-deep);padding-top:1.4rem;position:relative}
+  .step::before{content:"";position:absolute;top:-2px;left:0;width:3.4rem;height:2px;background:var(--brass)}
+  .step .serif{font-size:3rem;font-style:italic;color:var(--brass-hover);line-height:1;display:block;margin-bottom:.8rem}
+  .step h3{font-family:'DM Serif Display',Georgia,serif;font-weight:400;font-size:1.45rem;margin-bottom:.5rem;color:var(--plum-deep)}
+  .step p{color:var(--ink-soft);font-size:.99rem}
+  .step p a{font-weight:700;color:var(--plum-deep);border-bottom:2px solid var(--brass)}
+
+  /* ---------- Emergency band ---------- */
+  .emergency-band{background:var(--plum-black);color:var(--offwhite);text-align:center;position:relative;overflow:hidden}
+  .emergency-band .droplet-ghost{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:430px;height:430px;color:rgba(216,190,140,.05);pointer-events:none}
+  .emergency-band h2{font-family:'DM Serif Display',Georgia,serif;font-weight:400;font-size:clamp(2rem,4.6vw,3.2rem);line-height:1.12;position:relative}
+  .emergency-band h2 em{font-style:italic;color:var(--brass-soft)}
+  .emergency-band p{color:var(--muted-dark);max-width:36rem;margin:1rem auto 2rem;position:relative}
+  .emergency-band .hero-ctas{justify-content:center;margin:0;position:relative}
+
+  /* ---------- Contact ---------- */
+  .contact-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:3.5rem;align-items:start}
+  .big-number{
+    font-family:'DM Serif Display',Georgia,serif;
+    font-size:clamp(2.2rem,5.4vw,3.6rem);line-height:1.05;color:var(--plum-deep);
+    display:inline-block;margin:.6rem 0 1.4rem;border-bottom:3px solid var(--brass);
+  }
+  .contact-card{
+    background:var(--plum-deep);color:var(--offwhite);border-radius:var(--radius);
+    padding:2.2rem 2rem;
+  }
+  .contact-card h3{font-family:'DM Serif Display',Georgia,serif;font-weight:400;font-size:1.5rem;margin-bottom:1.2rem}
+  .contact-row{display:flex;justify-content:space-between;gap:1rem;padding:.85rem 0;border-top:1px solid var(--plum-line);font-size:.97rem}
+  .contact-row:first-of-type{border-top:none}
+  .contact-row span{color:var(--muted-dark);font-weight:600}
+  .contact-row strong{font-weight:700;text-align:right}
+  .areas{display:flex;flex-wrap:wrap;gap:.55rem;margin-top:1.2rem}
+  .areas .chip{border-color:#D8CDB2;color:var(--ink);background:var(--card)}
+  .areas .chip svg{color:var(--brass-hover)}
+
+  /* ---------- Footer ---------- */
+  footer{background:var(--plum-black);color:var(--muted-dark);padding:3rem 0 2.2rem;border-top:1px solid var(--plum-line)}
+  .footer-in{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1.6rem;align-items:flex-start}
+  footer .logo-text .serif{color:var(--offwhite)}
+  .footer-links{display:flex;gap:1.8rem;flex-wrap:wrap;font-size:.93rem;font-weight:600}
+  .footer-links a:hover{color:var(--brass-soft)}
+  .footer-base{border-top:1px solid var(--plum-line);margin-top:2.2rem;padding-top:1.4rem;font-size:.86rem;display:flex;flex-wrap:wrap;gap:.6rem;justify-content:space-between}
+
+  /* ---------- WhatsApp float ---------- */
+  .wa-float{
+    position:fixed;right:20px;bottom:20px;z-index:80;
+    width:60px;height:60px;border-radius:50%;
+    background:var(--wa);color:#fff;
+    display:grid;place-items:center;
+    box-shadow:0 14px 30px rgba(22,40,26,.4);
+    transition:transform .25s ease,background .25s ease;
+  }
+  .wa-float:hover{transform:scale(1.08);background:var(--wa-hover)}
+  .wa-float svg{width:30px;height:30px}
+  .wa-float::after{
+    content:"";position:absolute;inset:-6px;border-radius:50%;
+    border:2px solid rgba(62,124,79,.45);animation:pulse 2.4s ease-out infinite;
+  }
+  @keyframes pulse{0%{transform:scale(.85);opacity:1}70%{transform:scale(1.15);opacity:0}100%{opacity:0}}
+
+  /* ---------- Responsive ---------- */
+  @media(max-width:960px){
+    .hero-grid{grid-template-columns:1fr;gap:2.6rem}
+    .hero-photo img{height:380px}
+    .hero-badge{left:12px}
+    .stats{grid-template-columns:repeat(2,1fr)}
+    .stat{padding-left:1.2rem}
+    .stat:nth-child(odd){border-left:none;padding-left:0}
+    .svc-grid{grid-template-columns:repeat(2,1fr)}
+    .why-grid{grid-template-columns:repeat(2,1fr);gap:2.2rem 0}
+    .why-item:nth-child(odd){border-left:none;padding-left:0}
+    .gal-grid{grid-template-columns:repeat(2,1fr)}
+    .contact-grid{grid-template-columns:1fr;gap:2.4rem}
+    nav.main-nav{display:none}
+  }
+  @media(max-width:600px){
+    section{padding:3.8rem 0}
+    .svc-grid{grid-template-columns:1fr}
+    .steps{grid-template-columns:1fr;gap:1.8rem}
+    .gal{aspect-ratio:4/3.4}
+    .hero{padding-top:3.4rem}
+    .hero-ctas .btn{flex:1 1 100%}
+    .header-call span{display:none}
+    .header-call{padding:.55rem .7rem}
+    .stat .serif{font-size:1.8rem}
+    .wa-float{right:16px;bottom:16px;width:56px;height:56px}
+  }
+</style>
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header>
+  <div class="wrap header-in">
+    <a class="logo" href="#top" aria-label="The Water Wizard — home">
+      <span class="logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+      </span>
+      <span class="logo-text">
+        <span class="serif">The Water Wizard</span>
+        <small>Plumbing · Teesside</small>
+      </span>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#services">Services</a>
+      <a href="#why">Why Us</a>
+      <a href="#work">Our Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="header-call" href="tel:+447542796276">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <span>07542 796276</span>
+    </a>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="reveal">
+        <span class="eyebrow">Plumbing &amp; Heating · Teesside</span>
+        <h1>When water won’t behave, <em>we put it right.</em></h1>
+        <p class="hero-sub">Teesside’s local plumber for leaks, blockages, radiators and bathroom plumbing. Over 19 years’ experience, fully insured — and every quote is free, with no obligation.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-brass" href="tel:+447542796276">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call 07542 796276
+          </a>
+          <a class="btn btn-wa" href="https://wa.me/447542796276" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            WhatsApp Us
+          </a>
+        </div>
+        <div class="chip-row">
+          <span class="chip hot">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            24/7 Emergency Callouts
+          </span>
+          <span class="chip">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+            Free Quotes
+          </span>
+          <span class="chip">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            Fully Insured
+          </span>
+        </div>
+      </div>
+      <div class="hero-photo reveal">
+        <div class="frame">
+          <img src="https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?q=80&w=1200&auto=format&fit=crop" alt="Copper and steel pipework fitted by a plumber" loading="eager">
+        </div>
+        <div class="hero-badge">
+          <span class="serif">19+</span>
+          <p><strong>Years on the tools</strong><br>serving homes across Teesside</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="stats reveal">
+      <div class="stat"><span class="serif">19+</span><span>Years of experience</span></div>
+      <div class="stat"><span class="serif">24/7</span><span>Emergency cover, day &amp; night</span></div>
+      <div class="stat"><span class="serif">Free</span><span>No-obligation quotes</span></div>
+      <div class="stat"><span class="serif">100%</span><span>Fully insured work</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow" style="color:var(--brass-hover)">What We Do</span>
+      <h2>Plumbing problems, <em>sorted properly</em></h2>
+      <p>From a dripping tap to a burst pipe in the middle of the night — one local number for all of it. No call centres, no passing you around.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc reveal">
+        <span class="num">— 01</span>
+        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg></div>
+        <h3>Leaks &amp; Pipe Repairs</h3>
+        <p>Drips, bursts and mystery damp patches traced and repaired properly — not just patched over. We find the cause, fix it, and make good.</p>
+      </article>
+      <article class="svc reveal">
+        <span class="num">— 02</span>
+        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg></div>
+        <h3>Blocked Drains</h3>
+        <p>Sinks, toilets and drains that won’t shift, cleared quickly and cleanly. If it keeps coming back, we’ll tell you why — and how to stop it.</p>
+      </article>
+      <article class="svc reveal">
+        <span class="num">— 03</span>
+        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 14.76V5a2 2 0 1 0-4 0v9.76a4.5 4.5 0 1 0 4 0z"/></svg></div>
+        <h3>Radiators &amp; Heating</h3>
+        <p>Cold spots, noisy radiators, leaking valves and heating that’s given up. Bleeding, balancing, repairs and replacements to get the warmth back.</p>
+      </article>
+      <article class="svc reveal">
+        <span class="num">— 04</span>
+        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16a1 1 0 0 1 1 1 8 8 0 0 1-8 8H11a8 8 0 0 1-8-8 1 1 0 0 1 1-1z"/><path d="M6 12V5a2 2 0 0 1 4 0"/><path d="M8 21l-1 1M16 21l1 1"/></svg></div>
+        <h3>Bathroom Plumbing</h3>
+        <p>Baths, showers, sinks and suites plumbed in neatly and sealed to last. New installs, upgrades and the little faults that drive you mad.</p>
+      </article>
+      <article class="svc reveal">
+        <span class="num">— 05</span>
+        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4.5 4.5 0 0 0-6 6L3 18l3 3 5.7-5.7a4.5 4.5 0 0 0 6-6L14 13l-3-3 3.7-3.7z"/></svg></div>
+        <h3>Taps, Toilets &amp; Fittings</h3>
+        <p>Dripping taps, running toilets, tired fittings swapped and sorted. Small jobs done with the same care as the big ones — and no silly call-out games.</p>
+      </article>
+      <article class="svc emergency reveal">
+        <span class="num">— 06</span>
+        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+        <h3>24/7 Emergency Callouts</h3>
+        <p>Burst pipe at 2am? Water where it shouldn’t be? Call any time, day or night — <a href="tel:+447542796276">07542 796276</a> — and we’ll talk you through the first steps while we’re on our way.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WHY ================= -->
+<section class="why" id="why">
+  <svg class="droplet-ghost" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+  <div class="wrap">
+    <div class="sec-head on-dark reveal">
+      <span class="eyebrow">Why The Water Wizard</span>
+      <h2>A local tradesman, <em>not a call centre</em></h2>
+      <p>When you ring, you speak to the person who’ll actually turn up, spanner in hand.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-item reveal">
+        <div class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+        <h3>19 Years’ Experience</h3>
+        <p>Nearly two decades of plumbing across Teesside homes. Most problems, we’ve seen — and fixed — before.</p>
+      </div>
+      <div class="why-item reveal">
+        <div class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 11.5l2 2 4-4.5"/></svg></div>
+        <h3>Fully Insured</h3>
+        <p>Every job covered, every repair done to standard. Peace of mind for you, and pride in the work for us.</p>
+      </div>
+      <div class="why-item reveal">
+        <div class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></div>
+        <h3>Free, Honest Quotes</h3>
+        <p>Every quote is free and carries no obligation. You’ll know the cost before we start — no surprises on the bill.</p>
+      </div>
+      <div class="why-item reveal">
+        <div class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+        <h3>Fast Local Response</h3>
+        <p>Based in Teesside and working only in Teesside — so when it’s urgent, we can actually get to you quickly.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GALLERY ================= -->
+<section id="work">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow" style="color:var(--brass-hover)">Recent Work</span>
+      <h2>Neat work, <em>done once, done right</em></h2>
+      <p>Bathrooms, pipework and fittings across Middlesbrough, Stockton-on-Tees, Coulby Newham and the wider Teesside area.</p>
+    </div>
+    <div class="gal-grid">
+      <figure class="gal reveal">
+        <img src="https://images.unsplash.com/photo-1585704032915-c3400ca199e7?q=80&w=800&auto=format&fit=crop" alt="New chrome bath taps and shower fittings installed" loading="lazy">
+        <figcaption><small>Fittings</small>Taps &amp; shower fittings</figcaption>
+      </figure>
+      <figure class="gal reveal">
+        <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=800&auto=format&fit=crop" alt="Modern bathroom with walk-in shower plumbed in" loading="lazy">
+        <figcaption><small>Bathrooms</small>Showers &amp; full suites</figcaption>
+      </figure>
+      <figure class="gal reveal">
+        <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?q=80&w=800&auto=format&fit=crop" alt="Traditional bathroom with pedestal sink and toilet" loading="lazy">
+        <figcaption><small>Repairs</small>Toilets, sinks &amp; leaks</figcaption>
+      </figure>
+      <figure class="gal reveal">
+        <img src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc?q=80&w=800&auto=format&fit=crop" alt="A plumber's wrenches and tools of the trade" loading="lazy">
+        <figcaption><small>On The Tools</small>19 years of know-how</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ================= HOW IT WORKS ================= -->
+<section class="steps-sec" id="how">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow" style="color:var(--brass-hover)">How It Works</span>
+      <h2>Fixed in <em>three easy steps</em></h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal">
+        <span class="serif">1</span>
+        <h3>Message or Call</h3>
+        <p>Ring <a href="tel:+447542796276">07542 796276</a> or send a WhatsApp — a photo of the problem helps us arrive with the right parts.</p>
+      </div>
+      <div class="step reveal">
+        <span class="serif">2</span>
+        <h3>Get a Free Quote</h3>
+        <p>A clear, honest price before any work starts. Free, and with no obligation — the decision is entirely yours.</p>
+      </div>
+      <div class="step reveal">
+        <span class="serif">3</span>
+        <h3>Job Done Properly</h3>
+        <p>We turn up when we say we will, fix it properly, tidy up after ourselves and talk you through what’s been done.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EMERGENCY BAND ================= -->
+<section class="emergency-band">
+  <svg class="droplet-ghost" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+  <div class="wrap reveal">
+    <h2>Burst pipe at 2am?<br><em>Don’t panic — call the Wizard.</em></h2>
+    <p>Emergencies don’t keep office hours, and neither do we. One call and we’ll help you stop the water and get it sorted.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-brass" href="tel:+447542796276">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Call 07542 796276
+      </a>
+      <a class="btn btn-ghost" href="https://wa.me/447542796276" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        Message on WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="reveal">
+        <span class="eyebrow" style="color:var(--brass-hover)">Get In Touch</span>
+        <h2 class="serif" style="font-size:clamp(1.9rem,4vw,2.7rem);line-height:1.15;margin-top:.7rem">One number for<br>every plumbing job</h2>
+        <a class="big-number" href="tel:+447542796276">07542 796276</a>
+        <p style="color:var(--ink-soft);max-width:30rem">Call or WhatsApp any time — for emergencies, straight away; for everything else, whenever suits you. Quotes are always free and without obligation.</p>
+        <div class="hero-ctas" style="margin-top:1.6rem">
+          <a class="btn btn-plum" href="tel:+447542796276">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call Now
+          </a>
+          <a class="btn btn-wa" href="https://wa.me/447542796276" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            WhatsApp a Photo
+          </a>
+        </div>
+        <div class="areas">
+          <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:15px;height:15px"><path d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Middlesbrough</span>
+          <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:15px;height:15px"><path d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Stockton-on-Tees</span>
+          <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:15px;height:15px"><path d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Coulby Newham</span>
+          <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:15px;height:15px"><path d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>All of Teesside</span>
+        </div>
+      </div>
+      <aside class="contact-card reveal">
+        <h3>Good to know</h3>
+        <div class="contact-row"><span>Phone &amp; WhatsApp</span><strong>07542 796276</strong></div>
+        <div class="contact-row"><span>Emergencies</span><strong>24 hours, 7 days</strong></div>
+        <div class="contact-row"><span>Quotes</span><strong>Free, no obligation</strong></div>
+        <div class="contact-row"><span>Experience</span><strong>19+ years</strong></div>
+        <div class="contact-row"><span>Insurance</span><strong>Fully insured</strong></div>
+        <div class="contact-row"><span>Area covered</span><strong>All of Teesside</strong></div>
+        <p style="color:var(--muted-dark);font-size:.93rem;margin-top:1.3rem">Not sure if it’s a plumbing job? Send a photo on WhatsApp and we’ll tell you straight — and what it’s likely to cost.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap">
+    <div class="footer-in">
+      <a class="logo" href="#top">
+        <span class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+        </span>
+        <span class="logo-text">
+          <span class="serif">The Water Wizard</span>
+          <small>Plumbing · Teesside</small>
+        </span>
+      </a>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="#services">Services</a>
+        <a href="#why">Why Us</a>
+        <a href="#work">Our Work</a>
+        <a href="tel:+447542796276">07542 796276</a>
+      </nav>
+    </div>
+    <div class="footer-base">
+      <span>© 2026 The Water Wizard · Plumber covering Middlesbrough, Stockton-on-Tees, Coulby Newham &amp; all of Teesside</span>
+      <span>24/7 emergency callouts · Fully insured · Free quotes</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ================= WHATSAPP FLOAT ================= -->
+<a class="wa-float" href="https://wa.me/447542796276" target="_blank" rel="noopener" aria-label="Message The Water Wizard on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+</a>
+
+<script>
+  // Scroll-reveal
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){ e.target.classList.add('visible'); io.unobserve(e.target); }
+    });
+  },{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+</script>
+</body>
+</html>
